@@ -135,6 +135,42 @@
   }
 
   /* ----------------------------------------------------------------------
+     Interactive Poland map (Projekty) — highlight market on hover/tap/focus
+     ---------------------------------------------------------------------- */
+  var plMarkers = document.querySelectorAll(".pl-marker");
+  var plReadout = document.querySelector(".pl-readout");
+  var plMap = document.querySelector(".pl-map");
+  if (plMarkers.length && plReadout) {
+    var plDefault = plReadout.textContent;
+
+    var plActivate = function (marker) {
+      plMarkers.forEach(function (x) {
+        x.classList.remove("is-active");
+      });
+      marker.classList.add("is-active");
+      var name = marker.getAttribute("data-name");
+      var kind = marker.getAttribute("data-kind");
+      plReadout.textContent = kind ? name + " — " + kind : name;
+    };
+    var plReset = function () {
+      plMarkers.forEach(function (x) {
+        x.classList.remove("is-active");
+      });
+      plReadout.textContent = plDefault;
+    };
+
+    plMarkers.forEach(function (m) {
+      m.addEventListener("mouseenter", function () { plActivate(m); });
+      m.addEventListener("focus", function () { plActivate(m); });
+      m.addEventListener("click", function () { plActivate(m); });
+      m.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); plActivate(m); }
+      });
+    });
+    if (plMap) { plMap.addEventListener("mouseleave", plReset); }
+  }
+
+  /* ----------------------------------------------------------------------
      Footer year
      ---------------------------------------------------------------------- */
   var yearEl = document.getElementById("year");
