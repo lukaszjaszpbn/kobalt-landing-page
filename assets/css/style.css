@@ -224,8 +224,16 @@ main > section[id]{ scroll-margin-top:76px; }
 .section-photo--muted::after{ background:linear-gradient(160deg, rgba(18,18,58,.4), rgba(18,18,58,.15)); }
 
 /* ==========================================================================
-   Track record
+   Track record / Doświadczenie w liczbach
    ========================================================================== */
+.record{ display:grid; grid-template-columns:0.9fr 1.25fr; gap:52px; align-items:start; }
+.record-num{
+  font-family:var(--serif); font-weight:500; font-size:clamp(2rem,4.6vw,3.1rem);
+  color:var(--copper); line-height:1.12; font-variant-numeric:tabular-nums; display:block;
+}
+.record-body p{ font-size:1rem; color:var(--stone-navy); }
+.record-body p + p{ margin-top:16px; }
+
 .kpis-story{ display:grid; grid-template-columns:1fr 1fr; gap:48px; }
 .kpi-story .num{
   font-family:var(--serif); font-size:clamp(1.5rem,3vw,2.1rem); color:var(--copper);
@@ -272,15 +280,15 @@ main > section[id]{ scroll-margin-top:76px; }
 .projects-bg{
   position:absolute; inset:0; z-index:0;
   background:
-    linear-gradient(180deg, rgba(18,18,58,.3), rgba(18,18,58,.5)),
+    linear-gradient(180deg, rgba(18,18,58,.72) 0%, rgba(18,18,58,.32) 26%, rgba(18,18,58,.52) 100%),
     url("../img/projects/projects-aerial-sunset.jpg") center/cover no-repeat;
 }
 .projects-inner{ position:relative; z-index:1; }
 .projects .eyebrow{ margin-bottom:14px; }
 .projects-title{
-  font-family:var(--serif); font-weight:500; font-size:clamp(1.6rem,3.4vw,2.3rem);
-  line-height:1.22; max-width:20ch; margin:0 0 44px;
-  text-shadow:0 2px 18px rgba(18,18,58,.7);
+  font-family:var(--serif); font-weight:500; font-size:clamp(1.7rem,3.6vw,2.5rem);
+  line-height:1.2; max-width:20ch; margin:0 0 44px;
+  text-shadow:0 1px 2px rgba(18,18,58,.95), 0 3px 24px rgba(18,18,58,.9);
 }
 .projects-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
 
@@ -305,6 +313,14 @@ main > section[id]{ scroll-margin-top:76px; }
   margin-top:14px; text-align:center; font-size:.82rem; letter-spacing:.04em;
   color:var(--copper); min-height:1.2em;
 }
+.pl-legend{
+  list-style:none; margin:12px 0 0; padding:12px 4px 2px;
+  border-top:1px solid rgba(194,147,79,.22);
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  font-size:.9rem; color:var(--pearl); font-weight:500;
+}
+.pl-legend li{ white-space:nowrap; }
+.pl-legend li:not(:last-child)::after{ content:"·"; color:var(--copper); margin:0 10px; }
 .projects-copy p{ color:var(--pearl); font-size:1.02rem; text-shadow:0 1px 3px rgba(18,18,58,.95), 0 2px 18px rgba(18,18,58,.85); }
 .projects-copy__note{
   font-size:.92rem; border-left:2px solid var(--copper-soft); padding-left:16px; margin-top:22px;
@@ -350,6 +366,7 @@ main > section[id]{ scroll-margin-top:76px; }
    ========================================================================== */
 @media (max-width:900px){
   .cr-grid{ grid-template-columns:1fr; gap:44px; }
+  .record{ grid-template-columns:1fr; gap:22px; }
   .kpis-story{ grid-template-columns:1fr; gap:32px; }
   .projects-grid{ grid-template-columns:1fr; gap:32px; }
   .map-panel{ max-width:440px; margin:0 auto; }
