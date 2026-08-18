@@ -311,20 +311,20 @@ main > section[id]{ scroll-margin-top:76px; }
 }
 
 /* ==========================================================================
-   Co robimy, a czego nie
+   Zasady, których się trzymamy
    ========================================================================== */
-.compare-row{
-  display:grid; grid-template-columns:1fr 1fr; gap:32px;
-  padding:22px 0; border-top:1px solid rgba(139,107,66,.3);
+.principles{ display:grid; grid-template-columns:1fr 1fr; gap:36px 56px; }
+.principle{ border-top:1px solid var(--copper-soft); padding-top:20px; }
+.principle h3{
+  font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.2rem;
+  color:var(--ink); line-height:1.25; margin-bottom:10px;
 }
-.compare-row:first-child{ border-top:none; padding-top:8px; }
-.compare-row .tag{
-  display:block; font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px;
+.principle p{ font-size:.95rem; color:var(--stone-cream); }
+.principles-close{
+  margin-top:48px; max-width:44ch;
+  font-family:var(--serif); font-style:italic; font-size:clamp(1.1rem,2vw,1.35rem);
+  color:var(--copper-soft); line-height:1.4;
 }
-.compare-row .yes .tag{ color:var(--copper-soft); }
-.compare-row .no .tag{ color:var(--stone-cream); opacity:.75; }
-.compare-row .yes p{ color:var(--ink); font-size:.96rem; }
-.compare-row .no p{ color:var(--stone-cream); font-size:.96rem; }
 
 /* ==========================================================================
    Kontakt
@@ -361,7 +361,7 @@ main > section[id]{ scroll-margin-top:76px; }
   .hero{ min-height:82vh; }
   .person{ grid-template-columns:76px 1fr; gap:18px; }
   .avatar{ width:76px; height:96px; font-size:1.1rem; }
-  .compare-row{ grid-template-columns:1fr; gap:12px; }
+  .principles{ grid-template-columns:1fr; gap:28px; }
   .kpi{ flex:1 1 100%; border-left:none; padding-left:0; border-top:1px solid var(--copper-soft); padding-top:18px; margin-top:18px; }
   .kpi:first-child{ border-top:none; padding-top:0; margin-top:0; }
   .footer-inner{ flex-direction:column; gap:8px; text-align:center; }
