@@ -349,6 +349,8 @@ main > section[id]{ scroll-margin-top:76px; }
 .contact-card h3{ font-size:1.05rem; margin-bottom:4px; }
 .contact-card .role{ font-size:.84rem; color:var(--copper-soft); margin-bottom:10px; }
 .contact-card .lines{ font-size:.9rem; color:var(--stone-navy); }
+.contact-card .lines a{ color:inherit; text-decoration:none; transition:color .2s ease; }
+.contact-card .lines a:hover, .contact-card .lines a:focus-visible{ color:var(--copper); }
 .company-block{
   border-top:1px solid var(--copper-soft); padding-top:24px; margin-bottom:32px;
   font-size:.9rem; color:var(--stone-navy); line-height:1.8;
