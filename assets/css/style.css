@@ -94,6 +94,8 @@ a{ color:inherit; }
 }
 .lang-switch{ display:flex; gap:8px; font-size:.72rem; letter-spacing:.08em; }
 .lang-active{ color:var(--copper); }
+.lang-link{ color:var(--stone-navy); text-decoration:none; transition:color .2s ease; }
+.lang-link:hover, .lang-link:focus-visible{ color:var(--copper); }
 .lang-disabled{ color:var(--stone-navy); opacity:.45; cursor:default; }
 
 .nav-toggle{
