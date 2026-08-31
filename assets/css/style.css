@@ -2,8 +2,8 @@
    Kobalt Real Estate — tokens
    ========================================================================== */
 :root{
-  --navy-950:#12123A;
-  --navy-800:#1E1F57;
+  --navy-950:#16235E;
+  --navy-800:#27387E;
   --cream:#F6F1E7;
   --cream-dim:#ECE3D2;
   --copper:#C2934F;
@@ -133,7 +133,7 @@ a{ color:inherit; }
 .hero-media{
   position:absolute; inset:-8% 0;
   background-image:
-    linear-gradient(180deg, rgba(18,18,58,.18), rgba(18,18,58,.5)),
+    linear-gradient(180deg, rgba(22,35,94,.18), rgba(22,35,94,.5)),
     url("../img/hero/hero-facade-amber.jpg");
   background-size:cover; background-position:center 70%;
   filter:saturate(.9) contrast(1.03);
@@ -156,9 +156,9 @@ a{ color:inherit; }
 .hero-content h1{
   font-family:var(--serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.6rem);
   line-height:1.14; max-width:15ch; margin-bottom:24px;
-  text-shadow:0 2px 24px rgba(18,18,58,.6);
+  text-shadow:0 2px 24px rgba(22,35,94,.6);
 }
-.hero-content .lead{ max-width:48ch; color:var(--pearl); font-size:1.08rem; margin-bottom:34px; text-shadow:0 1px 14px rgba(18,18,58,.7); }
+.hero-content .lead{ max-width:48ch; color:var(--pearl); font-size:1.08rem; margin-bottom:34px; text-shadow:0 1px 14px rgba(22,35,94,.7); }
 
 .btn{
   display:inline-flex; align-items:center; gap:10px; padding:15px 28px;
@@ -221,9 +221,9 @@ main > section[id]{ scroll-margin-top:76px; }
 
 .section-photo{ margin:26px 0 0; aspect-ratio:16/10; overflow:hidden; border-radius:2px; position:relative; }
 .section-photo img{ width:100%; height:100%; object-fit:cover; filter:saturate(.82) contrast(1.04); }
-.section-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(160deg, rgba(18,18,58,.28), rgba(194,147,79,.12)); }
+.section-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(160deg, rgba(22,35,94,.28), rgba(194,147,79,.12)); }
 .section-photo--muted img{ filter:saturate(.35) contrast(1.06) brightness(1.02); }
-.section-photo--muted::after{ background:linear-gradient(160deg, rgba(18,18,58,.4), rgba(18,18,58,.15)); }
+.section-photo--muted::after{ background:linear-gradient(160deg, rgba(22,35,94,.4), rgba(22,35,94,.15)); }
 
 /* ==========================================================================
    Track record / Doświadczenie w liczbach
@@ -282,7 +282,7 @@ main > section[id]{ scroll-margin-top:76px; }
 .projects-bg{
   position:absolute; inset:0; z-index:0;
   background:
-    linear-gradient(180deg, rgba(18,18,58,.72) 0%, rgba(18,18,58,.32) 26%, rgba(18,18,58,.52) 100%),
+    linear-gradient(180deg, rgba(22,35,94,.72) 0%, rgba(22,35,94,.32) 26%, rgba(22,35,94,.52) 100%),
     url("../img/projects/projects-aerial-sunset.jpg") center/cover no-repeat;
 }
 .projects-inner{ position:relative; z-index:1; }
@@ -290,16 +290,16 @@ main > section[id]{ scroll-margin-top:76px; }
 .projects-title{
   font-family:var(--serif); font-weight:500; font-size:clamp(1.7rem,3.6vw,2.5rem);
   line-height:1.2; max-width:20ch; margin:0 0 44px;
-  text-shadow:0 1px 2px rgba(18,18,58,.95), 0 3px 24px rgba(18,18,58,.9);
+  text-shadow:0 1px 2px rgba(22,35,94,.95), 0 3px 24px rgba(22,35,94,.9);
 }
 .projects-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
 
 .map-panel{
   margin:0; padding:22px 22px 16px; border:1px solid rgba(194,147,79,.28);
-  border-radius:4px; background:rgba(18,18,58,.5); backdrop-filter:blur(2px);
+  border-radius:4px; background:rgba(22,35,94,.5); backdrop-filter:blur(2px);
 }
 .pl-map{ width:100%; height:auto; display:block; max-height:480px; }
-.pl-voivs .voiv{ fill:rgba(230,231,238,0.88); stroke:rgba(18,18,58,0.30); stroke-width:0.7; stroke-linejoin:round; transition:fill .25s ease; }
+.pl-voivs .voiv{ fill:rgba(230,231,238,0.88); stroke:rgba(22,35,94,0.30); stroke-width:0.7; stroke-linejoin:round; transition:fill .25s ease; }
 .pl-marker{ cursor:pointer; }
 .pl-marker .halo{ fill:rgba(194,147,79,.5); opacity:0; transition:r .3s ease, opacity .3s ease; }
 .pl-marker .dot{ fill:var(--copper); stroke:var(--navy-950); stroke-width:1; transition:r .25s ease; }
@@ -323,7 +323,7 @@ main > section[id]{ scroll-margin-top:76px; }
 }
 .pl-legend li{ white-space:nowrap; }
 .pl-legend li:not(:last-child)::after{ content:"·"; color:var(--copper); margin:0 10px; }
-.projects-copy p{ color:var(--pearl); font-size:1.02rem; text-shadow:0 1px 3px rgba(18,18,58,.95), 0 2px 18px rgba(18,18,58,.85); }
+.projects-copy p{ color:var(--pearl); font-size:1.02rem; text-shadow:0 1px 3px rgba(22,35,94,.95), 0 2px 18px rgba(22,35,94,.85); }
 .projects-copy__note{
   font-size:.92rem; border-left:2px solid var(--copper-soft); padding-left:16px; margin-top:22px;
 }
